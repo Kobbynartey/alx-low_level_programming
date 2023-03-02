@@ -2,18 +2,30 @@
 
 /**
  * char *_strcat - appends the src string to the dest string
- * @s1 - string 1
- * @s2 - string 2
- * Return - pointer to the resulting string dest
+ * @dest: string 1
+ * @src: string 2
+ *
+ * Return: pointer to the resulting string dest
  */
 
 char *_strcat(char *dest, char *src)
 {
-	char s1[100] = "Hello";
-	char s2 [] = "C programmers";
+	int i;
+	int j;
 
-	strcat(s1,s2);
-	putchar(s1);
-	
-	return 0;
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+
+	dest[i] = '\0';
+	return (dest);
 }
