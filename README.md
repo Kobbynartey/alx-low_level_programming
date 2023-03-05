@@ -1,1 +1,1 @@
-This is my journey in C programming
+This is a readme file for even more pointers, arrays and strings
