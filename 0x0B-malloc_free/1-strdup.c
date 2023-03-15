@@ -12,17 +12,23 @@
 
 char *_strdup(char *str)
 {
-
-	size_t len = strlen(str) + 1;
-	char *copy = (char *) malloc(len);
+	char *a;
+	int i, j;
 
 	if (str == NULL)
 		return (NULL);
 
-	if (copy == NULL)
-	{
+	for (i = 0; str[i] != '\0'; i++);
+
+	a = malloc(i * sizeof(*a) + 1);
+	if (a == NULL)
 		return (NULL);
-	}
-	memcpy(copy, str, len);
-	return (copy);
+
+	for (j = 0; j < i; j++)
+		a[c] = str[j];
+	a[j] = '\0';
+
+	return (a);
+}
+
 }
