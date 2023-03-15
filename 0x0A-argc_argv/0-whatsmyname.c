@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,10 +9,9 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
+	int i = argc - argc;
 
-	for (i = 0; i < argc; i++)
-	{
-		printf(argv[0]);
+	printf("%s\n", argv[i]);
 
+	return (0);
 }
