@@ -12,6 +12,6 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		_putchar(argv[0]);
+		printf(argv[0]);
 
 }
