@@ -1,11 +1,11 @@
-#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - prints the name followed by new line
- * Return: 0 as success
- */
+ *@argc: is an argument counter for char.
+ *@argv: is an argument value for char.
+ *Return: Returns 0 as success
+**/
 
 int main(int argc, char *argv[])
 {
