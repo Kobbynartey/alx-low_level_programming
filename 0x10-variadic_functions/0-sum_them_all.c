@@ -1,4 +1,6 @@
-#include <variadic_functions.h>
+#include "variadic_functions.h"
+#include <stdio.h>
+#include <stdarg.h>
 
 /**
  * sum_them_all - function that sums all numbers given
