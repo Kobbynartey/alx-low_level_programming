@@ -19,6 +19,6 @@ char *c;
 void (*tp)(va_list var);
 }
 typ_t;
-#endif
 
 #endif
+
